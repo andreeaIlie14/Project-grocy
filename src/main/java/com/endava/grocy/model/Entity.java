@@ -1,18 +1,25 @@
 package com.endava.grocy.model;
 
-public enum Entity {
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-    PRODUCTS("products"),
-    CHORES("chores");
-
+@Data
+public abstract class Entity {
+    @EqualsAndHashCode.Exclude
+    private Integer id;
     private String name;
-
-    private Entity(String name){
-        this.name = name;
-    }
+    private String description;
 
     @Override
     public String toString() {
-        return name;
+        ObjectMapper objectMapper = new ObjectMapper();  //converteste din obiect in json
+        try {
+            return objectMapper.writeValueAsString(this);
+        } catch (JsonProcessingException e) {
+            return super.toString();
+        }
     }
+
 }

@@ -1,26 +1,27 @@
 package com.endava.grocy.client;
 
-import com.endava.grocy.filters.LogFilter;
-import com.endava.grocy.filters.AuthenticationFilter;
 import com.endava.grocy.model.Entity;
-import com.endava.grocy.model.Product;
-import com.endava.grocy.util.EnvReader;
+import com.endava.grocy.model.EntityType;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-import static io.restassured.RestAssured.given;
 
+public class EntityClient extends BaseClient{
 
-public class EntityClient {
+//    Cand se cheama metoda de mai jos (conform teorie de polymorphism) poti sa ii fie clasa Entity fie orice copil al clasei Entity (copii: Product & Location)
+    public Response createEntity(EntityType entityType, Entity entity) {
 
-    public Response createEntity(Entity entity, Product product) {
-
-        return given().filters(new AuthenticationFilter(), new LogFilter())
-                .baseUri(EnvReader.getBaseUri())
-                .basePath(EnvReader.getBasePath())
+        return getBasicRestConfig()
                 .contentType(ContentType.JSON)
-                .body(product)
-                .pathParam("entity", entity)
+                .body(entity)
+                .pathParam("entity", entityType)
                 .post("/objects/{entity}");
+    }
+
+    public Response deleteEntityById (EntityType entityType, Integer productId){
+        return getBasicRestConfig()
+                .pathParam("entity", entityType)
+                .pathParam("objectId", productId)
+                .delete("/objects/{entity}/{objectId}");
     }
 }

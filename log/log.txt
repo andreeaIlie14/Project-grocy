@@ -4,7 +4,7 @@ Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	entity=PRODUCTS
+Path params:	entityType=PRODUCTS
 Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -43,7 +43,7 @@ Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	entity=PRODUCTS
+Path params:	entityType=PRODUCTS
 Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -82,7 +82,7 @@ Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	entity=PRODUCTS
+Path params:	entityType=PRODUCTS
 Headers:		Accept=*/*
 				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
 				Content-Type=application/json
@@ -122,7 +122,7 @@ Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	entity=products
+Path params:	entityType=products
 Headers:		Accept=*/*
 				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
 				Content-Type=application/json
@@ -162,7 +162,7 @@ Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	entity=PRODUCTS
+Path params:	entityType=PRODUCTS
 Headers:		Accept=*/*
 				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
 				Content-Type=application/json
@@ -202,7 +202,7 @@ Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	entity=products
+Path params:	entityType=products
 Headers:		Accept=*/*
 				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
 				Content-Type=application/json
@@ -242,7 +242,7 @@ Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	entity=products
+Path params:	entityType=products
 Headers:		Accept=*/*
 				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
 				Content-Type=application/json
@@ -284,7 +284,7 @@ Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	entity=products
+Path params:	entityType=products
 Headers:		Accept=*/*
 				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
 				Content-Type=application/json
@@ -325,7 +325,7 @@ Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	entity=products
+Path params:	entityType=products
 Headers:		Accept=*/*
 				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
 				Content-Type=application/json
@@ -358,5 +358,816 @@ Referrer-Policy: no-referrer-when-downgrade
 
 {
     "error_message": "SQLSTATE[HY000]: General error: 1 table products has no column named qu_id_pruchase"
+}
+
+17:58:09.945 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entityType=products
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Heavy Duty Wooden Clock",
+    "description": "When Chuck Norris points to null, null quakes in fear.",
+    "location_id": 2,
+    "min_stock_amount": 6,
+    "qu_id_stock": 5,
+    "qu_id_pruchase": 5
+}
+
+HTTP/1.1 400 Bad Request
+Server: nginx
+Date: Mon, 11 Nov 2024 15:57:41 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+
+{
+    "error_message": "SQLSTATE[HY000]: General error: 1 table products has no column named qu_id_pruchase"
+}
+
+17:59:02.087 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entityType=products
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Fantastic Marble Shoes",
+    "description": "Chuck Norris' beard is immutable.",
+    "location_id": 2,
+    "min_stock_amount": 5,
+    "qu_id_stock": 5,
+    "qu_id_purchase": 5
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 11 Nov 2024 15:58:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "30"
+}
+
+18:00:02.290 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entityType=products
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Enormous Aluminum Bag",
+    "description": "Chuck Norris does not use exceptions when programming. He has not been able to identify any of his code that is not exceptional.",
+    "location_id": 2,
+    "min_stock_amount": 2,
+    "qu_id_stock": 5,
+    "qu_id_purchase": 5
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 11 Nov 2024 15:59:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "31"
+}
+
+14:04:38.107 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entityType=products
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Sleek Wool Shoes",
+    "description": "Chuck Norris can recite π. Backwards.",
+    "location_id": 2,
+    "min_stock_amount": 9,
+    "qu_id_stock": 5,
+    "qu_id_purchase": 5
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Nov 2024 12:04:07 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "30"
+}
+
+14:28:19.268 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entityType=products
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Aerodynamic Rubber Table",
+    "description": "There is no Esc key on Chuck Norris' keyboard, because no one escapes Chuck Norris.",
+    "location_id": 2,
+    "min_stock_amount": 5,
+    "qu_id_stock": 5,
+    "qu_id_purchase": 5
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Nov 2024 12:27:48 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "31"
+}
+
+14:28:19.895 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	DELETE
+Request URI:	https://en.demo.grocy.info/api/objects/products/31
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entityType=products
+				objectId=31
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 204 No Content
+Server: nginx
+Date: Wed, 13 Nov 2024 12:27:49 GMT
+Content-Type: application/json
+Connection: keep-alive
+Keep-Alive: timeout=5
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+14:32:04.033 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entityType=products
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Intelligent Plastic Coat",
+    "description": "Chuck Norris can recite π. Backwards.",
+    "location_id": 2,
+    "min_stock_amount": 6,
+    "qu_id_stock": 5,
+    "qu_id_purchase": 5
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Nov 2024 12:31:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "32"
+}
+
+14:32:04.653 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	DELETE
+Request URI:	https://en.demo.grocy.info/api/objects/products/32
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entityType=products
+				objectId=32
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 204 No Content
+Server: nginx
+Date: Wed, 13 Nov 2024 12:31:33 GMT
+Content-Type: application/json
+Connection: keep-alive
+Keep-Alive: timeout=5
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+16:57:10.189 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/locations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entity=locations
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Brother",
+    "description": "Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.",
+    "is_freezer": 1
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Nov 2024 14:56:39 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "7"
+}
+
+17:09:58.345 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/locations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entity=locations
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Father Lesley Jacobson Jr.",
+    "description": "The North remembers.",
+    "is_freezer": 1
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Nov 2024 15:09:27 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "8"
+}
+
+17:09:59.179 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entity=products
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Mediocre Leather Plate",
+    "description": "Chuck Norris' preferred IDE is hexedit.",
+    "location_id": 8,
+    "min_stock_amount": 7,
+    "qu_id_stock": 5,
+    "qu_id_purchase": 5
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Nov 2024 15:09:28 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "33"
+}
+
+17:26:45.677 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/quantity_units
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entity=quantity_units
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "1 teaspoon",
+    "description": "He's an absolute dream!",
+    "name_plural": "1 teaspoons"
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Nov 2024 15:26:14 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "15"
+}
+
+17:43:56.261 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/locations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entity=locations
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Sister-in-law Bobbie McDermott",
+    "description": "Some old wounds never truly heal, and bleed again at the slightest word.",
+    "is_freezer": 1
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Nov 2024 15:43:25 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "9"
+}
+
+17:43:57.040 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/quantity_units
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entity=quantity_units
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "1 quart 13109",
+    "description": "I'm sure that in 1985, plutonium is available in every corner drugstore, but in 1955, it's a little hard to come by.",
+    "name_plural": "1 quart 13109s"
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Nov 2024 15:43:26 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "16"
+}
+
+17:43:57.359 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entity=products
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Lightweight Steel Bench",
+    "description": "Chuck Norris compresses his files by doing a flying round house kick to the hard drive.",
+    "location_id": 9,
+    "min_stock_amount": 6,
+    "qu_id_stock": 16,
+    "qu_id_purchase": 16
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Nov 2024 15:43:26 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "34"
+}
+
+17:43:57.541 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	DELETE
+Request URI:	https://en.demo.grocy.info/api/objects/products/34
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entity=products
+				objectId=34
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 204 No Content
+Server: nginx
+Date: Wed, 13 Nov 2024 15:43:26 GMT
+Content-Type: application/json
+Connection: keep-alive
+Keep-Alive: timeout=5
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+17:44:06.528 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/quantity_units
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entity=quantity_units
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "1/3 pint 99945",
+    "description": "Hey, come on. I had to change. Do you think I'm going back in that-that zoot suit? The old man really came through. It worked!",
+    "name_plural": "1/3 pint 99945s"
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Nov 2024 15:43:35 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "17"
+}
+
+17:44:16.525 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/locations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entity=locations
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Mother Nigel Cronin",
+    "description": "Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.",
+    "is_freezer": 1
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Nov 2024 15:43:45 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "10"
+}
+
+17:44:17.272 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/quantity_units
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entity=quantity_units
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "2 tablespoon 17954",
+    "description": "This is all wrong. I don't know what it is. But when I kiss you, it's like I'm kissing... my brother. I guess that doesn't make any sense, does it?",
+    "name_plural": "2 tablespoon 17954s"
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Nov 2024 15:43:46 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "18"
+}
+
+17:44:17.543 [main] INFO  com.endava.grocy.filters.LogFilter - Request method:	POST
+Request URI:	https://en.demo.grocy.info/api/objects/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	entity=products
+Headers:		Accept=*/*
+				GROCY-API-KEY=5pElYJuNz1LB4ikfq0YhLdgKwUrmcV5Nr3H5x2SBV4bFONfVva
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Rustic Aluminum Wallet",
+    "description": "When Chuck Norris points to null, null quakes in fear.",
+    "location_id": 10,
+    "min_stock_amount": 5,
+    "qu_id_stock": 18,
+    "qu_id_purchase": 18
+}
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Nov 2024 15:43:46 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=5
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: *
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Alt-Svc: h3=":443"; ma=864000
+
+{
+    "created_object_id": "35"
 }
 

@@ -9,13 +9,10 @@ import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Test;
 
-import static org.hamcrest.Matchers.notNullValue;
-
-public class CreateProductTest extends TestBaseClass {
+public class DeleteProductTest extends TestBaseClass {
 
     @Test
-
-    public void shouldCreateProduct() {
+    public void shouldDeleteProduct(){
 //        GIVEN
         Location location = dataProvider.getLocation();
         Response createLocationResponse = entityClient.createEntity(EntityType.LOCATION, location);
@@ -28,13 +25,15 @@ public class CreateProductTest extends TestBaseClass {
         Integer quantityUnitId = createQuantityUnitResponse.jsonPath().getInt("created_object_id");
 
         Product product = dataProvider.getProduct(locationId, quantityUnitId, quantityUnitId);
+        Response response = entityClient.createEntity(EntityType.PRODUCT,product);
+        response.then().statusCode(HttpStatus.SC_OK);
+        Integer id = response.body().jsonPath().getInt("created_object_id");
 
 //        WHEN
-        Response response = entityClient.createEntity(EntityType.PRODUCT, product);
+        Response response1 = entityClient.deleteEntityById(EntityType.PRODUCT, id);
 
 //        THEN
-        response.then().statusCode(HttpStatus.SC_OK)
-                .body("created_object_id", notNullValue());
+        response1.then().statusCode(HttpStatus.SC_NO_CONTENT);
 
     }
 }

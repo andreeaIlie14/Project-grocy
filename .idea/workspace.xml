@@ -5,19 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e17d585c-8bc5-4c77-849d-1d50f34b6337" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/client/EntityClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/data/DataProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/filters/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/filters/LogFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/util/EnvReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/env/qa.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/endava/grocy/TestBaseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/endava/grocy/entity/product/CreateProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/client/BaseClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/EntityType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/QuantityUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/endava/grocy/entity/location/CreateLocationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/endava/grocy/entity/product/DeleteProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/endava/grocy/entity/quantityUnit/CreateQuantityUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/grocy/client/EntityClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/client/EntityClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/grocy/data/DataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/data/DataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/grocy/entity/product/CreateProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/grocy/entity/product/CreateProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +37,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2ohqgG3iLR6VhSGPVFFmeK5zWKH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -46,12 +48,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.CreateLocationTest.shouldCreateLocation.executor": "Run",
     "JUnit.CreateProductTest.shouldCreateProduct.executor": "Run",
+    "JUnit.CreateQuantityUnitTest.shouldCreateQuantityUnit.executor": "Run",
+    "JUnit.DeleteProductTest.shouldDeleteProduct.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/anilie/Automation Course/grocy-test/src/main/resources/env"
+    "last_opened_file_path": "C:/Users/anilie/Automation Course/Project-grocy"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -66,7 +71,23 @@
       <recent name="com.endava.grocy" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CreateProductTest.shouldCreateProduct">
+    <configuration name="CreateLocationTest.shouldCreateLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grocy-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.endava.grocy.entity.location.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.endava.grocy.entity.location" />
+      <option name="MAIN_CLASS_NAME" value="com.endava.grocy.entity.location.CreateLocationTest" />
+      <option name="METHOD_NAME" value="shouldCreateLocation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateProductTest.shouldCreateProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="grocy-test" />
       <extension name="coverage">
@@ -83,9 +104,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreateQuantityUnitTest.shouldCreateQuantityUnit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grocy-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.endava.grocy.entity.quantityUnit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.endava.grocy.entity.quantityUnit" />
+      <option name="MAIN_CLASS_NAME" value="com.endava.grocy.entity.quantityUnit.CreateQuantityUnitTest" />
+      <option name="METHOD_NAME" value="shouldCreateQuantityUnit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteProductTest.shouldDeleteProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grocy-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.endava.grocy.entity.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.endava.grocy.entity.product" />
+      <option name="MAIN_CLASS_NAME" value="com.endava.grocy.entity.product.DeleteProductTest" />
+      <option name="METHOD_NAME" value="shouldDeleteProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Project-grocy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Project-grocy" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CreateProductTest.shouldCreateProduct" />
+        <item itemvalue="JUnit.CreateQuantityUnitTest.shouldCreateQuantityUnit" />
+        <item itemvalue="JUnit.DeleteProductTest.shouldDeleteProduct" />
+        <item itemvalue="JUnit.CreateLocationTest.shouldCreateLocation" />
       </list>
     </recent_temporary>
   </component>
