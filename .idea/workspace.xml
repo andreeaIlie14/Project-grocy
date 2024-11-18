@@ -5,21 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e17d585c-8bc5-4c77-849d-1d50f34b6337" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/client/BaseClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/EntityType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/QuantityUnit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/endava/grocy/entity/location/CreateLocationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/endava/grocy/entity/product/DeleteProductTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/endava/grocy/entity/quantityUnit/CreateQuantityUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/client/StockClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/fixture/GrocyFixture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/Stock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/endava/grocy/stock/AddStockTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/grocy/client/EntityClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/client/EntityClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/grocy/data/DataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/data/DataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/grocy/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/grocy/TestBaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/grocy/TestBaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/grocy/entity/product/CreateProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/grocy/entity/product/CreateProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/grocy/entity/product/DeleteProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/grocy/entity/product/DeleteProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +44,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.AddStockTest.shouldAddStock.executor": "Run",
+    "JUnit.AddStockTest.shouldFailedToAddStockGivenNegativeAmount.executor": "Run",
+    "JUnit.AddStockTest.shouldFailedToAddStockGivenTransactionTypeNotPurchase.executor": "Run",
     "JUnit.CreateLocationTest.shouldCreateLocation.executor": "Run",
     "JUnit.CreateProductTest.shouldCreateProduct.executor": "Run",
     "JUnit.CreateQuantityUnitTest.shouldCreateQuantityUnit.executor": "Run",
@@ -71,50 +70,50 @@
       <recent name="com.endava.grocy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateProductTest.shouldCreateProduct">
-    <configuration name="CreateLocationTest.shouldCreateLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.com.endava.grocy in grocy-test">
+    <configuration name="AddStockTest.shouldAddStock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="grocy-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.endava.grocy.entity.location.*" />
+          <option name="PATTERN" value="com.endava.grocy.stock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.endava.grocy.entity.location" />
-      <option name="MAIN_CLASS_NAME" value="com.endava.grocy.entity.location.CreateLocationTest" />
-      <option name="METHOD_NAME" value="shouldCreateLocation" />
+      <option name="PACKAGE_NAME" value="com.endava.grocy.stock" />
+      <option name="MAIN_CLASS_NAME" value="com.endava.grocy.stock.AddStockTest" />
+      <option name="METHOD_NAME" value="shouldAddStock" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateProductTest.shouldCreateProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddStockTest.shouldFailedToAddStockGivenNegativeAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="grocy-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.endava.grocy.entity.product.*" />
+          <option name="PATTERN" value="com.endava.grocy.stock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.endava.grocy.entity.product" />
-      <option name="MAIN_CLASS_NAME" value="com.endava.grocy.entity.product.CreateProductTest" />
-      <option name="METHOD_NAME" value="shouldCreateProduct" />
+      <option name="PACKAGE_NAME" value="com.endava.grocy.stock" />
+      <option name="MAIN_CLASS_NAME" value="com.endava.grocy.stock.AddStockTest" />
+      <option name="METHOD_NAME" value="shouldFailedToAddStockGivenNegativeAmount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateQuantityUnitTest.shouldCreateQuantityUnit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddStockTest.shouldFailedToAddStockGivenTransactionTypeNotPurchase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="grocy-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.endava.grocy.entity.quantityUnit.*" />
+          <option name="PATTERN" value="com.endava.grocy.stock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.endava.grocy.entity.quantityUnit" />
-      <option name="MAIN_CLASS_NAME" value="com.endava.grocy.entity.quantityUnit.CreateQuantityUnitTest" />
-      <option name="METHOD_NAME" value="shouldCreateQuantityUnit" />
+      <option name="PACKAGE_NAME" value="com.endava.grocy.stock" />
+      <option name="MAIN_CLASS_NAME" value="com.endava.grocy.stock.AddStockTest" />
+      <option name="METHOD_NAME" value="shouldFailedToAddStockGivenTransactionTypeNotPurchase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,6 +135,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.endava.grocy in grocy-test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grocy-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.endava.grocy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.endava.grocy" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Project-grocy" />
       <method v="2">
@@ -151,10 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreateProductTest.shouldCreateProduct" />
-        <item itemvalue="JUnit.CreateQuantityUnitTest.shouldCreateQuantityUnit" />
+        <item itemvalue="JUnit.com.endava.grocy in grocy-test" />
+        <item itemvalue="JUnit.AddStockTest.shouldAddStock" />
+        <item itemvalue="JUnit.AddStockTest.shouldFailedToAddStockGivenNegativeAmount" />
+        <item itemvalue="JUnit.AddStockTest.shouldFailedToAddStockGivenTransactionTypeNotPurchase" />
         <item itemvalue="JUnit.DeleteProductTest.shouldDeleteProduct" />
-        <item itemvalue="JUnit.CreateLocationTest.shouldCreateLocation" />
       </list>
     </recent_temporary>
   </component>

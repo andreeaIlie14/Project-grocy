@@ -1,8 +1,6 @@
 package com.endava.grocy.data;
 
-import com.endava.grocy.model.Location;
-import com.endava.grocy.model.Product;
-import com.endava.grocy.model.QuantityUnit;
+import com.endava.grocy.model.*;
 import com.github.javafaker.Faker;
 
 public class DataProvider {
@@ -37,5 +35,14 @@ public class DataProvider {
         quantityUnit.setDescription((faker.backToTheFuture().quote()));
 
         return quantityUnit;
+    }
+
+    public Stock getStock() {
+        Stock stock = new Stock();
+        stock.setAmount(faker.number().randomDouble(2,0,500));
+        stock.setTransactionType(TransactionType.PURCHASE);
+        stock.setPrice(faker.number().randomDouble(2,0,1000));
+
+        return stock;
     }
 }

@@ -15,19 +15,12 @@ public class CreateProductTest extends TestBaseClass {
 
     @Test
 
-    public void shouldCreateProduct() {
+    public void shouldCreateProduct() throws IllegalAccessException {
 //        GIVEN
-        Location location = dataProvider.getLocation();
-        Response createLocationResponse = entityClient.createEntity(EntityType.LOCATION, location);
-        createLocationResponse.then().statusCode(HttpStatus.SC_OK);
-        Integer locationId = createLocationResponse.jsonPath().getInt("created_object_id");
-
-        QuantityUnit quantityUnit = dataProvider.getQuantityUnit();
-        Response createQuantityUnitResponse = entityClient.createEntity(EntityType.QUANTITY_UNIT, quantityUnit);
-        createQuantityUnitResponse.then().statusCode(HttpStatus.SC_OK);
-        Integer quantityUnitId = createQuantityUnitResponse.jsonPath().getInt("created_object_id");
-
-        Product product = dataProvider.getProduct(locationId, quantityUnitId, quantityUnitId);
+        grocyFixture.createEntity(EntityType.LOCATION).createEntity(EntityType.QUANTITY_UNIT);
+        Integer locationId = grocyFixture.getLocation().getId();
+        Integer quantityId = grocyFixture.getQuantityUnit().getId();
+        Product product = dataProvider.getProduct(locationId,quantityId,quantityId);
 
 //        WHEN
         Response response = entityClient.createEntity(EntityType.PRODUCT, product);
